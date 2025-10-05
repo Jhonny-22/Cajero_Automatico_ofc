@@ -43,12 +43,14 @@ public class confirmacion extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("¡Bienvenido!");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
 
         jTextField2.setBackground(new java.awt.Color(30, 30, 46));
         jTextField2.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setText("Tu registro fue exitoso.");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/check de registro.png"))); // NOI18N
 

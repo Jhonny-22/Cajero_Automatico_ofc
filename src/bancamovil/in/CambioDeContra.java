@@ -51,6 +51,7 @@ public class CambioDeContra extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Cambio de Contraseña");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -67,11 +68,13 @@ public class CambioDeContra extends javax.swing.JFrame {
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("Ingrese nueva contraseña");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
 
         jTextField3.setBackground(new java.awt.Color(30, 30, 46));
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("Repita la contraseña");
         jTextField3.setBorder(null);
+        jTextField3.setFocusable(false);
 
         jButton1.setBackground(new java.awt.Color(153, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N

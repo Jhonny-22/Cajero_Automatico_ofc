@@ -54,6 +54,7 @@ public class RecuperarContra extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Recuperar Contraseña");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
 
         jTextPane1.setBackground(new java.awt.Color(30, 30, 46));
         jScrollPane1.setViewportView(jTextPane1);
@@ -68,6 +69,7 @@ public class RecuperarContra extends javax.swing.JFrame {
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("Nombre completo");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -78,11 +80,13 @@ public class RecuperarContra extends javax.swing.JFrame {
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("Nombre de usuario");
         jTextField3.setBorder(null);
+        jTextField3.setFocusable(false);
 
         jTextField4.setBackground(new java.awt.Color(30, 30, 46));
         jTextField4.setForeground(new java.awt.Color(153, 153, 153));
         jTextField4.setText("Correo electrónico");
         jTextField4.setBorder(null);
+        jTextField4.setFocusable(false);
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N

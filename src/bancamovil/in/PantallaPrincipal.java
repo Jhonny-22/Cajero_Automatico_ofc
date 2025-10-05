@@ -61,11 +61,13 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("SoftSquad");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
 
         jTextField2.setBackground(new java.awt.Color(30, 30, 46));
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("¡Bienvenid@!");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
 
         jButton1.setText("jButton1");
 
