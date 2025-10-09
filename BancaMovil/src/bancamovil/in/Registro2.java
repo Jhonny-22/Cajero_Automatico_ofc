@@ -75,6 +75,7 @@ public class Registro2 extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(153, 153, 153));
         jTextField1.setText("Correo electrónico");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -85,11 +86,13 @@ public class Registro2 extends javax.swing.JFrame {
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("Número de teléfono");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
 
         jTextField3.setBackground(new java.awt.Color(30, 30, 46));
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("Nombre de usuario");
         jTextField3.setBorder(null);
+        jTextField3.setFocusable(false);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -100,11 +103,13 @@ public class Registro2 extends javax.swing.JFrame {
         jTextField4.setForeground(new java.awt.Color(153, 153, 153));
         jTextField4.setText("Contraseña");
         jTextField4.setBorder(null);
+        jTextField4.setFocusable(false);
 
         jTextField5.setBackground(new java.awt.Color(30, 30, 46));
         jTextField5.setForeground(new java.awt.Color(153, 153, 153));
         jTextField5.setText("Confirmación de contraseña");
         jTextField5.setBorder(null);
+        jTextField5.setFocusable(false);
 
         jButton1.setBackground(new java.awt.Color(30, 30, 46));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -121,6 +126,7 @@ public class Registro2 extends javax.swing.JFrame {
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
         jTextField6.setText("Registrarse");
         jTextField6.setBorder(null);
+        jTextField6.setFocusable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

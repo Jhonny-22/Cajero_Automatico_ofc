@@ -53,6 +53,7 @@ public class Registro extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Registrarse");
         jTextField1.setBorder(null);
+        jTextField1.setFocusable(false);
 
         jTextPane2.setBackground(new java.awt.Color(30, 30, 46));
         jScrollPane2.setViewportView(jTextPane2);
@@ -72,16 +73,19 @@ public class Registro extends javax.swing.JFrame {
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("Nombre completo");
         jTextField2.setBorder(null);
+        jTextField2.setFocusable(false);
 
         jTextField3.setBackground(new java.awt.Color(30, 30, 46));
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("Fecha de nacimiento");
         jTextField3.setBorder(null);
+        jTextField3.setFocusable(false);
 
         jTextField4.setBackground(new java.awt.Color(30, 30, 46));
         jTextField4.setForeground(new java.awt.Color(153, 153, 153));
         jTextField4.setText("Documento de identidad");
         jTextField4.setBorder(null);
+        jTextField4.setFocusable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
