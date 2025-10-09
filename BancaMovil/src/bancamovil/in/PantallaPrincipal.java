@@ -75,6 +75,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(30, 30, 46));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/consulta de saldo.png"))); // NOI18N
         jButton1.setText("Consultar Saldo");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255), new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255)));
@@ -89,7 +90,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(30, 30, 46));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\mica\\Documents\\NetBeansProjects\\BancaMovil\\BancaMovil\\src\\image\\deposito.png")); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/deposito.png"))); // NOI18N
         jButton2.setText("Depositar Dinero");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255), new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255)));
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -103,7 +105,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(30, 30, 46));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\mica\\Documents\\NetBeansProjects\\BancaMovil\\BancaMovil\\src\\image\\dinero-en-efectivo.png")); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dinero-en-efectivo.png"))); // NOI18N
         jButton3.setText("Retirar Dinero");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255), new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255)));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -117,7 +120,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(30, 30, 46));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\mica\\Documents\\NetBeansProjects\\BancaMovil\\BancaMovil\\src\\image\\transferir-dinero.png")); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/transferir-dinero.png"))); // NOI18N
         jButton4.setText("Transferir Dinero");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255), new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255)));
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -131,7 +135,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(30, 30, 46));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\mica\\Documents\\NetBeansProjects\\BancaMovil\\BancaMovil\\src\\image\\salida.png")); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/salida.png"))); // NOI18N
         jButton5.setText("Cerrar Sesion");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255), new java.awt.Color(0, 0, 0), new java.awt.Color(153, 51, 255)));
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
