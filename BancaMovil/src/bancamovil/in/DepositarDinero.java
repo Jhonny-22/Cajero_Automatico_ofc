@@ -4,6 +4,15 @@
  */
 package bancamovil.in;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Nain
@@ -75,11 +84,21 @@ public class DepositarDinero extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Depositar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(153, 153, 153));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -147,6 +166,62 @@ public class DepositarDinero extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+String montoStr = jTextPane1.getText().trim().replace(",", ".").replaceAll("[^0-9.]", "");
+    if (montoStr.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Ingrese un monto válido.");
+        return;
+    }
+
+    try {
+        double monto = Double.parseDouble(montoStr);
+
+        if (monto <= 0) {
+            JOptionPane.showMessageDialog(this, "El monto debe ser mayor a cero.");
+            return;
+        }
+
+        File archivo = new File(System.getProperty("user.home") + "/Desktop/bancocajero/datosUsuario.txt");
+        List<String> lineas = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                String nuevaLinea = linea;
+                if (linea.toLowerCase().startsWith("saldo")) {
+                    String saldoStr = linea.replaceAll("[^0-9.]", "");
+                    double saldoActual = Double.parseDouble(saldoStr);
+                    double nuevoSaldo = saldoActual + monto;
+                    nuevaLinea = "Saldo: " + nuevoSaldo;
+                }
+                lineas.add(nuevaLinea);
+            }
+        }
+
+        try (PrintWriter pw = new PrintWriter(new FileWriter(archivo))) {
+            for (String l : lineas) {
+                pw.println(l);
+            }
+        }
+
+        JOptionPane.showMessageDialog(this, "Depósito realizado con éxito");
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Monto inválido, ingrese solo números.");
+    } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error al actualizar saldo: " + ex.getMessage());
+        logger.severe(ex.toString());
+    }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    PantallaPrincipal pp = new PantallaPrincipal();
+    pp.setVisible(true);
+    this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

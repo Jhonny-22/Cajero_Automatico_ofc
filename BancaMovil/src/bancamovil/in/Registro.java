@@ -68,6 +68,11 @@ public class Registro extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Siguiente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setBackground(new java.awt.Color(30, 30, 46));
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
@@ -149,6 +154,12 @@ public class Registro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    Registro2 r2 = new Registro2();
+    r2.setVisible(true);
+    this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
